@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap');
+@import "tailwindcss";
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Apply fonts globally */
+body {
+  font-family: 'Manrope', sans-serif; /* Default font */
+}
+
+h1, h2, h3, .heading {
+  font-family: 'Outfit', sans-serif; /* Heading font */
+}
+
+
+
+
+.typing-text {
+  animation: blink 0.8s step-end infinite;
+  text-shadow: 0 0 10px rgba(236, 72, 153, 0.6),
+               0 0 20px rgba(236, 72, 153, 0.4);
+}
+/* revolving dot animation */
+@keyframes orbit {
+  0%   { transform: rotate(0deg) translateX(60px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(60px) rotate(-360deg); }
+}
+
+.project-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #ff1f8f; /* pink glow */
+  border-radius: 50%;
+  transform-origin: -60px center;
+  animation: orbit 4s linear infinite;
+  box-shadow: 0 0 12px #ff1f8f;
+}
+
+
+@layer utilities {
+  @keyframes snakeBorder {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .snake-border {
+    stroke-dasharray: 1000;
+    animation: snakeBorder 3s linear infinite;
+  }
+}

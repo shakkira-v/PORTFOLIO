@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap');
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Apply fonts globally */
+body {
+  font-family: 'Manrope', sans-serif; /* Default font */
+}
+
+h1, h2, h3, .heading {
+  font-family: 'Outfit', sans-serif; /* Heading font */
+}
+
+
+
+
+.typing-text {
+  animation: blink 0.8s step-end infinite;
+  text-shadow: 0 0 10px rgba(236, 72, 153, 0.6),
+               0 0 20px rgba(236, 72, 153, 0.4);
+}
