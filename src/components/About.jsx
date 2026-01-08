@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import aboutImg from "../assets/prof1.jpeg"; // replace with your image
+import aboutImg from "../assets/prof88.png"; // replace with your image
 
 export default function About() {
   return (
@@ -11,7 +11,7 @@ export default function About() {
     >
       {/* Left Image Section */}
       <motion.div
-        className="md:w-1/2 w-full flex justify-center mb-10 md:mb-0 relative"
+        className="md:w-1/4 w-full flex justify-center mb-10 md:mb-0 relative"
         initial={{ opacity: 0, scale: 0.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
@@ -20,15 +20,15 @@ export default function About() {
         <img
           src={aboutImg}
           alt="About"
-          className="w-full max-w-[380px] h-auto object-contain rounded-3xl 
-             shadow-[0_0_25px_rgba(236,72,153,0.6)] hover:scale-105 
-             transition-transform duration-800 brightness-70 contrast-110"
+          className="w-full max-w-[260px] h-auto object-contain rounded-3xl 
+               shadow-[0_0_18px_rgba(236,72,153,0.5)]
+               transition-transform duration-700 brightness-75 contrast-110"
         />
-        {/* Soft Glow Animation */}
+
         <motion.div
-          className="absolute inset-0 rounded-2xl bg-pink-500/10 blur-3xl"
+          className="absolute inset-6 rounded-2xl bg-pink-500/10 blur-3xl"
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 0.5 }}
+          whileInView={{ opacity: 0.4 }}
           transition={{ duration: 2 }}
         />
       </motion.div>
@@ -63,18 +63,17 @@ export default function About() {
 
         {/* Typing-style Main Heading */}
         {/* Typing-style Main Heading (split into two lines) */}
-<motion.h1
-  className="relative text-3xl md:text-4xl font-bold text-white mb-6 leading-tight 
+        <motion.h1
+          className="relative text-3xl md:text-4xl font-bold text-white mb-6 leading-tight 
              inline-block border-b-2 border-pink-500 pb-2 overflow-hidden whitespace-nowrap"
-  initial={{ width: 0 }}
-  whileInView={{ width: "100%" }}
-  transition={{ duration: 3, ease: "easeInOut" }}
->
-  I’m Shakkira — <br className="hidden md:block" />
-  Passionate Developer & Creative Thinker..
-  <span className="ml-1 inline-block w-1 h-6 bg-pink-500 animate-blink"></span>
-</motion.h1>
-
+          initial={{ width: 0 }}
+          whileInView={{ width: "100%" }}
+          transition={{ duration: 3, ease: "easeInOut" }}
+        >
+          I’m Shakkira — <br className="hidden md:block" />
+          Passionate Developer & Creative Thinker..
+          <span className="ml-1 inline-block w-1 h-6 bg-pink-500 animate-blink"></span>
+        </motion.h1>
 
         {/* Paragraph */}
         <motion.p
@@ -83,12 +82,13 @@ export default function About() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 1.2 }}
         >
-          I began my career as a school teacher and discovered my love for technology —
-          leading me into the IT field. I’m passionate about crafting interactive,
-          meaningful web experiences using modern technologies like React and Tailwind CSS.
-          I enjoy learning new tools, exploring design trends, and turning creative ideas
-          into functional, elegant interfaces. Every project I build helps me grow as a
-          developer and creative problem-solver.
+          I began my career as a school teacher and discovered my love for
+          technology — leading me into the IT field. I’m passionate about
+          crafting interactive, meaningful web experiences using modern
+          technologies like React and Tailwind CSS. I enjoy learning new tools,
+          exploring design trends, and turning creative ideas into functional,
+          elegant interfaces. Every project I build helps me grow as a developer
+          and creative problem-solver.
         </motion.p>
       </motion.div>
     </section>

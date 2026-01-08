@@ -58,7 +58,7 @@ function App() {
 
         {/* Projects */}
         <motion.section
-          id="projects"
+          // id="projects"
           variants={sectionVariants}
           initial="hidden"
           whileInView="visible"
